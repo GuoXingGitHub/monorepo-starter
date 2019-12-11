@@ -1,0 +1,24 @@
+{
+  "name": "@lib/common",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "typings": "build/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "prepare": "tsc -p tsconfig.build.json",
+    "start": "tsc -p tsconfig.build.json",
+    "start:dev": "tsc -p tsconfig.build.json -w"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "tslint": "^5.20.1",
+    "typescript": "3.7.2"
+  }
+}

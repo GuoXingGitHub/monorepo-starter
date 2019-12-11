@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "build",
+    "declaration": true,
+    "target": "es5",
+    "module": "CommonJS",
+    "moduleResolution": "Node"
+  },
+  "exclude": [
+    "build",
+    "node_modules",
+    "coverage",
+    "config",
+    "src/**/*.spec.ts",
+  ]
+}
