@@ -10,10 +10,10 @@
       "libs/*"
     ],
     "nohoist": [
-      "typeorm",
-      "typeorm/**",
-      "@nestjs",
-      "@nestjs/**"
+      "**/typeorm",
+      "**/typeorm/**",
+      "**/@nestjs",
+      "**/@nestjs/**"
     ]
   },
   "scripts": {
