@@ -9,8 +9,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.8.0",
+    "clsx": "^1.0.4",
     "next": "^9.1.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/next": "^9.0.0",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "typescript": "^3.7.3"
   }
 }
