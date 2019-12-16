@@ -8,6 +8,12 @@
     "packages": [
       "apps/*",
       "libs/*"
+    ],
+    "nohoist": [
+      "typeorm",
+      "typeorm/**",
+      "@nestjs",
+      "@nestjs/**"
     ]
   },
   "scripts": {
