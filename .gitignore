@@ -3,3 +3,7 @@ node_modules/
 .vscode/
 
 *-error.log
+
+# Firebase
+firebase-keyfile.json
+keyfile.json

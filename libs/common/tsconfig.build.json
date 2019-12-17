@@ -6,13 +6,8 @@
     "declaration": true,
     "target": "es5",
     "module": "CommonJS",
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "experimentalDecorators": true
   },
-  "exclude": [
-    "build",
-    "node_modules",
-    "coverage",
-    "config",
-    "src/**/*.spec.ts",
-  ]
+  "exclude": ["build", "node_modules", "coverage", "config", "src/**/*.spec.ts"]
 }

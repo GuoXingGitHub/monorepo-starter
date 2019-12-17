@@ -1,9 +1,22 @@
-import { Module } from '@nestjs/common';
+import { Logger, Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import * as databaseConfig from './config/database';
+import { GCloudModule } from './gcloud/gcloud.module';
+import { AttachmentModule } from './modules/attachment/attachment.module';
+import { EmployeeModule } from './modules/employee/employee.module';
+
+Logger.log(databaseConfig, 'AppModule DBConfig');
 
 @Module({
-  imports: [],
+  imports: [
+    TypeOrmModule.forRoot(databaseConfig),
+    GCloudModule,
+    AttachmentModule,
+    EmployeeModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
