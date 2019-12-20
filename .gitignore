@@ -7,3 +7,8 @@ node_modules/
 # Firebase
 firebase-keyfile.json
 keyfile.json
+
+# env
+.env.local.sh
+.env.development.sh
+.env.production.sh
